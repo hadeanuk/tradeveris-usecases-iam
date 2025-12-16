@@ -20,7 +20,7 @@ An **OIDC-centric view** of the federation bridge flow.
 - Demonstrates how existing IAM platforms can integrate with vLEI without changing downstream applications.
 
 **Use Case:**  
-User authenticates to a **Port Community System (PCS)** via Okta, while the OP ensures identity and role verification using vLEI credentials.
+User authenticates to a **Port Community System (PCS)** or any other App protected via Okta, while the OP ensures identity and role verification using vLEI credentials.
 
 ---
 
