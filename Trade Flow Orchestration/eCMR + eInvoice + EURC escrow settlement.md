@@ -23,11 +23,13 @@ sequenceDiagram
     participant Chainlink as Chainlink (SLA Timers)<br> or simple Cron
     
     %% Setup escrow
+    Note over Buyer, Escrow: Setup escrow
     Buyer->>Escrow: Create per‑shipment escrow<br>(seller, buyer, verifier, amount, acceptSLA)
     Buyer->>Escrow: Deposit EURC<br>(ERC‑20 transfer to escrow address)
     Note right of Buyer: EURC on Ethereum mainnet (decentralized)
 
     %% eCMR Flow (Goods)
+    Note over Seller, Buyer: eCMR flow (Goods)
     Seller->>eCMR: Create eCMR (sign/seal)
     Seller->>Carrier1: Share access (link/QR)
     Carrier1->>Seller: Pickup goods
@@ -45,11 +47,12 @@ sequenceDiagram
     Buyer->>eCMR: Confirm receipt (optional note)
 
     %% Commercial docs
-    Seller->>Buyer: Issue EN‑16931 eInvoice<br>(can be via Peppol/ERP)
     Note over Seller,Buyer: eInvoice aligned with EN‑16931/ViDA trajectory
+    Seller->>Buyer: Issue EN‑16931 eInvoice<br>(can be via Peppol/ERP)
     Buyer->>eCMR: Accept eInvoice (signed artifact)
     eCMR-->>Verifier: Invoice Acceptance Indication
 
+    Note over Seller, Escrow: Settlement
     %% Exclusive branches (no fund release outside these):
     alt Buyer accepted and no dispute
         %% Acceptance signal (trusted verifier)
