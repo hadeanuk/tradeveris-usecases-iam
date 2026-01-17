@@ -37,6 +37,21 @@ User presents vLEI credentials (OOR/ECR) via IPEX to satisfy OP’s policy befor
 
 ---
 
+## Trade Flow Orchestration — Mermaid Sequence Diagrams
+
+The `Trade Flow Orchestration` folder contains Mermaid-based sequence diagrams and flowcharts that illustrate end-to-end trade processes and information architecture for documentary and electronic trade documents. Files included:
+
+- [Trade Flow Orchestration/eBL + eCMR - 1 - buy ship pay.md](Trade%20Flow%20Orchestration/eBL%20+%20eCMR%20-%201%20-%20buy%20ship%20pay.md): Combined eBL and eCMR sequence for a standard "buy → ship → pay" flow showing document lifecycle, carrier interactions, and handoffs between trading parties.
+- [Trade Flow Orchestration/eCMR + eBoE - 1 - buy ship pay.md](Trade%20Flow%20Orchestration/eCMR%20+%20eBoE%20-%201%20-%20buy%20ship%20pay.md): eCMR plus electronic Bill of Exchange variant A for buy/ship/pay, focusing on payment triggers tied to transport milestones.
+- [Trade Flow Orchestration/eCMR + eBoE - 2 - buy ship pay.md](Trade%20Flow%20Orchestration/eCMR%20+%20eBoE%20-%202%20-%20buy%20ship%20pay.md): Alternate eCMR + eBoE flow (variant B) showing different sequencing for document transfers and payer instructions.
+- [Trade Flow Orchestration/eCMR + eBoE - flowchart.md](Trade%20Flow%20Orchestration/eCMR%20+%20eBoE%20-%20flowchart.md): High-level flowchart summarising roles, message types, and primary decision points across the eCMR/eBoE flows.
+- [Trade Flow Orchestration/eCMR + eBoE - Information architecture - flowchart.md](Trade%20Flow%20Orchestration/eCMR%20+%20eBoE%20-%20Information%20architecture%20-%20flowchart.md): Information architecture view showing system components, data stores, and integrations for the eCMR/eBoE solution.
+- [Trade Flow Orchestration/eCMR + eInvoice + EURC escrow settlement.md](Trade%20Flow%20Orchestration/eCMR%20+%20eInvoice%20+%20EURC%20escrow%20settlement.md): End-to-end diagram covering eCMR, eInvoice issuance and an EURC escrow settlement flow that ties invoice settlement to document and transport events.
+
+Use these diagrams as a reference for implementation planning, orchestration logic, and integration tests. Open the files in VS Code and use the Markdown/mermaid preview to render sequence diagrams.
+
+---
+
 ## Render Mermaid in VS Code (Markdown Preview Enhanced)
 
 To view and edit Mermaid diagrams:
@@ -49,5 +64,4 @@ To view and edit Mermaid diagrams:
    ```mermaid
    sequenceDiagram
    ...
-  
-
+   
