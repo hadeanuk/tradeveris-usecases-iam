@@ -11,7 +11,7 @@ This repository provides visual sequence diagrams for authentication and federat
 
 ## Diagrams Included
 
-### 1. `oidc-federation-bridge.mmd`
+### 1. `vc-bridge-vlei-okta.md`
 **Focus:**  
 An **OIDC-centric view** of the federation bridge flow.  
 - Shows Okta acting as the relying party (RP) and routing authentication to an external OpenID Provider (OP) that brokers vLEI verification internally.  
@@ -24,7 +24,7 @@ User authenticates to a **Port Community System (PCS)** or any other App protect
 
 ---
 
-### 2. `vlei-ipex-auth-flow.mmd`
+### 2. `vc-bridge-vlei-ipex-auth-flow.md`
 **Focus:**  
 A **vLEI-centric view** of the same federation scenario.  
 - Highlights **KERI-based OOBI bootstrap**, **IPEX credential exchange**, and **cryptographic verification** steps.  
